@@ -12,8 +12,6 @@ export default function Home() {
 
       <Main />
       {/* 메인 부분 */}
-
-      
     </>
   )
 }

@@ -21,19 +21,21 @@ const SignIn = () => {
         console.log(nickName)
     }
 
-    const login = async (event) => {
-        event.preventDefault();
+    const login = async (e) => {
+        e.preventDefault();
 
         const req = { nickName, pwd };
 
         await axios.post("http://localhost:3040/user/sign-in", req)
             .then((res) => {
-                console.log("login() success");
-                console.log(res);
+                // console.log("login() success");
+                console.log(res.data);
                 if (res.data.token) {
                     sessionStorage.setItem("ACCESS_TOKEN", res.data.token)
+                    // auth.user.sessionStorage.getItem("ACCESS_TOKEN")
                 };
                 alert(res.data.nickName + "님 환영합니다.");
+                setAuth({token : sessionStorage.getItem("ACCESS_TOKEN")})
                 router.push("/");
 
             })

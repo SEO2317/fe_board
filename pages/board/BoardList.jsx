@@ -5,6 +5,7 @@ import curBoardAtom from '../atoms/curBoardAtom';
 import { useAtom } from 'jotai';
 import BoardPaging from './BoardPaging';
 import styled from "styled-components";
+import Posts from '../board_category/Posts';
 
 
 
@@ -67,7 +68,7 @@ const BoardList = () => {
             ))}
           </tbody>
         </table>
-        <Link href="/board-category/WriteBoard" className="float-right px-5 py-2 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200">글쓰기</Link>	
+        <Link href="/board_category/Posts" className="float-right px-5 py-2 font-bold border-2 rounded-lg text-neutral-900 hover:bg-neutral-200">글쓰기</Link>	
 	  </div>
 	  <BoardPaging
           total={posts.length}

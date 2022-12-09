@@ -1,12 +1,11 @@
 // import React, { useState } from 'react'
-// import { useAtom } from 'jotai'
-// import authAtom from '../../public/stores/authAtom'
-// import { useRouter } from 'next/router'
+// // import { useAtom } from 'jotai'
+// // import authAtom from '../../public/stores/authAtom'
+// // import { useRouter } from 'next/router'
 
-// var NewComponent = React.createClass({
-//   render: function() {
-//     return (
-//       <div>
+// const BoardList = () => {
+//   return (
+//     <div>
         
 //         <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet" />
 //         <div classname="w-full px-4 pb-4 bg-white rounded-md">
@@ -79,6 +78,7 @@
 //         </div>
 //         <style dangerouslySetInnerHTML={{__html: "\n  \nthead tr th:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px;}\nthead tr th:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px;}\n\ntbody tr td:first-child { border-top-left-radius: 5px; border-bottom-left-radius: 0px;}\ntbody tr td:last-child { border-top-right-radius: 5px; border-bottom-right-radius: 0px;}\n\n\n" }} />
 //       </div>
-//     );
-//   }
-// });
+//   )
+// }
+
+// export default BoardList

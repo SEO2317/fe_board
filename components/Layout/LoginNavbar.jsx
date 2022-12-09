@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Navbar = () => {
+const LoginNavbar = () => {
   return (
     <nav className="bg-violet-900">
       <div className="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8" />
@@ -103,11 +103,11 @@ const Navbar = () => {
 
       <Link href="/auth/SignIn" className="block px-3 py-2 font-bold text-center text-gray-300 rounded-md hover:bg-pink-300 hover:text-white hover:font-extrabold">Login</Link>
           
-      <Link href="/" className="block px-3 py-2 font-bold text-center text-gray-300 rounded-md hover:bg-pink-300 hover:text-white hover:font-extrabold">Logout</Link>
+      <Link href="/auth/SignUp" className="block px-3 py-2 font-bold text-center text-gray-300 rounded-md hover:bg-pink-300 hover:text-white hover:font-extrabold">Join</Link>
     </div>
   </div>
 </nav >
   )
 }
 
-export default Navbar
+export default LoginNavbar

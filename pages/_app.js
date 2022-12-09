@@ -1,16 +1,17 @@
 import Navbar from '../components/Layout/Navbar'
+import LoginNavbar from '../components/Layout/LoginNavbar'
 import '../styles/globals.css'
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
+import { useAtom } from 'jotai'
+import authAtom from '../public/stores/authAtom'
 
-import BoardList from './board/BoardList';
-
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
+  const [auth, setAuth] = useAtom(authAtom)
   return (
     <div>
-      <Navbar />
-      <GlobalStyle />
+      {auth.token == null ? <Navbar/>: <LoginNavbar/>}
       <Component {...pageProps} />
-      
+      <GlobalStyle />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { useAtom } from 'jotai';
 import styled from "styled-components";
 
 
-const BoardList = () => {
+const BoardList_ = () => {
   const [boards, setBoards] = useState([]);
   const [_, SetCurBoard] = useAtom(curBoardAtom);
   useEffect(() => {
@@ -51,4 +51,4 @@ const BoardList = () => {
     </>
   )
 }
-export default BoardList
+export default BoardList_

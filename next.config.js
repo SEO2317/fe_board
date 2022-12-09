@@ -3,4 +3,14 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+module.exports = {
+  nextConfig,
+  async rewrites() {
+		return [
+			{
+				source: "/:path*",
+				destination: "http://localhost:3040/:path*",
+			},
+		];
+	},
+}

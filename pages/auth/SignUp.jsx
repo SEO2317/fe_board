@@ -89,7 +89,7 @@ const SignUp = () => {
 					console.log(res.data.nickName);
 
 					alert(res.data.nickName + "님 아띠 상담소에 가입하신 것을 환영합니다!");
-					router.push("/user/SignIn");
+					router.push("/auth/SignIn"); //이 부분 맞나요?
 
 				})
 				.catch((err) => {
